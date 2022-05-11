@@ -1,0 +1,61 @@
+# [Created by task 2.5.3 2/1/2022 20:12:30]
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+context.linagora.read=+linagora
+context.linagora.write=+linagora
+
+context.ossa.read=+ossa
+context.ossa.write=+ossa
+
+context.travail.read=+work
+context.travail.write=+work
+
+context.lincompliance.read=+lincompliance
+context.lincompliance.write=+lincompliance
+
+context.HDP.read=+hdp
+context.HDP.write=+hdp
+
+context.SmartSLA.read=+smartsla
+context.SmartSLA.write=+smartsla
+
+context.SportAide.read=+sportaide
+context.SportAide.write=+sportaide
+
+# Files
+data.location=~/.task
+
+# Color theme (uncomment one to use)
+#include /usr/share/task/light-16.theme
+#include /usr/share/task/light-256.theme
+#include /usr/share/task/dark-16.theme
+#include /usr/share/task/dark-256.theme
+#include /usr/share/task/dark-red-256.theme
+#include /usr/share/task/dark-green-256.theme
+#include /usr/share/task/dark-blue-256.theme
+#include /usr/share/task/dark-violets-256.theme
+#include /usr/share/task/dark-yellow-green.theme
+#include /usr/share/task/dark-gray-256.theme
+#include /usr/share/task/dark-gray-blue-256.theme
+#include /usr/share/task/solarized-dark-256.theme
+#include /usr/share/task/solarized-light-256.theme
+#include /usr/share/task/no-color.theme
+
+taskd.ca=~/.task/freecinc_b2b237d4.ca.pem
+taskd.certificate=~/.task/freecinc_b2b237d4.cert.pem
+taskd.key=~/.task/freecinc_b2b237d4.key.pem
+taskd.server=freecinc.com:53589
+taskd.credentials=FreeCinc\/freecinc_b2b237d4\/af4619be-9b67-42c5-9f89-771116f59d22
+
+uda.taskwarrior-tui.background_process=task sync
+uda.taskwarrior-tui.background_process_period=15
+context=linagora

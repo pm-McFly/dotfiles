@@ -1,0 +1,21 @@
+[user]
+	name = Pierre Marty
+	email = p.mcfly.m@gmail.com
+	signingKey = 2E6873A493F30A1E
+[includeIf "gitdir:~/Documents/work/**"]
+	path = ~/Documents/work/.gitconfig
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg2
+[core]
+	editor = vim
+[tag]
+	forceSignAnnotated = true
+	gpgSign = true
+[init]
+	defaultBranch = main
+[alias]
+	logline = log --graph --pretty='%><(10)%C(red)%h %<(15)%C(green)%cr %C(yellow)%G? %<(70)%C(reset)%s <%ce> %C(bold blue)%<(22)%d'
+[pull]
+	ff = only
