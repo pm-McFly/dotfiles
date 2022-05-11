@@ -2,8 +2,6 @@
 	name = Pierre Marty
 	email = p.mcfly.m@gmail.com
 	signingKey = 2E6873A493F30A1E
-[includeIf "gitdir:~/Documents/work/**"]
-	path = ~/Documents/work/.gitconfig
 [commit]
 	gpgSign = true
 [gpg]
