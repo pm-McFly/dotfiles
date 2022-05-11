@@ -5,7 +5,7 @@
 set -euo pipefail
 
 readonly tmpfile=$(mktemp)
-nano $tmpfile
+vi $tmpfile
 gpg2 --import $tmpfile
 rm $tmpfile
 
