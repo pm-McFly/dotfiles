@@ -12,7 +12,9 @@ readonly tmpdir=$(mktemp -d)
 
 git clone https://github.com/pm-McFly/dotfiles.git $tmpdir
 pushd $tmpdir
-
-cp -rvf ./home/* $HOME
-
+cp -rvf ./home/. $HOME
 popd
+rm -rf $tmpdir
+
+echo "[+] All files copied"
+echo "[+] Done."
