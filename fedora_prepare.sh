@@ -18,6 +18,9 @@ sudo dnf groupupdate -y core sound-and-video
 sudo dnf copr enable -y kwizart/fedy
 sudo dnf install -y fedy curl thefuck bash gnupg2 openssh git vim make python ctags
 
+# Fix anydesk install issue
+sudo dnf install -y --releasever=32 pangox-compat.x86_64
+
 # Install third-party tools
 readonly tools_list=(
     'anydesk'
