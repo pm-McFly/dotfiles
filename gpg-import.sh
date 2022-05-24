@@ -4,10 +4,13 @@
 # secure script execution
 set -euo pipefail
 
-readonly tmpfile=$(mktemp)
-vi $tmpfile
-gpg2 --import $tmpfile
-rm $tmpfile
+import() {
+    readonly tmpfile=$(mktemp)
+    vi $tmpfile
+    gpg2 --import $tmpfile
+    rm $tmpfile
+}
 
+import
 echo "[+] GPG key imported."
 echo "[+] Done."
