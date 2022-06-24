@@ -1,0 +1,68 @@
+"*****************************************************************************
+"" Include user's local vim config
+"*****************************************************************************
+
+" C / C++
+if filereadable(expand("~/.config/vim/c-cxx.config.vim"))
+  source ~/.config/vim/c-cxx.config.vim
+endif
+
+" Golang
+if filereadable(expand("~/.config/vim/golang.config.vim"))
+  source ~/.config/vim/golang.config.vim
+endif
+
+" Haskell
+if filereadable(expand("~/.config/vim/haskell.config.vim"))
+"  source ~/.config/vim/haskell.config.vim
+endif
+
+" HTML
+if filereadable(expand("~/.config/vim/html.config.vim"))
+"  source ~/.config/vim/html.config.vim
+endif
+
+" JavaScript
+if filereadable(expand("~/.config/vim/javascript.config.vim"))
+"  source ~/.config/vim/javascript.config.vim
+endif
+
+" Lisp
+if filereadable(expand("~/.config/vim/lisp.config.vim"))
+"  source ~/.config/vim/lisp.config.vim
+endif
+
+" Perl
+if filereadable(expand("~/.config/vim/perl.config.vim"))
+"  source ~/.config/vim/perl.config.vim
+endif
+
+" PHP
+if filereadable(expand("~/.config/vim/php.config.vim"))
+"  source ~/.config/vim/php.config.vim
+endif
+
+" Python
+if filereadable(expand("~/.config/vim/python.config.vim"))
+  source ~/.config/vim/python.config.vim
+endif
+
+" Ruby
+if filereadable(expand("~/.config/vim/ruby.config.vim"))
+"  source ~/.config/vim/ruby.config.vim
+endif
+
+" Rust
+if filereadable(expand("~/.config/vim/rust.config.vim"))
+"  source ~/.config/vim/rust.config.vim
+endif
+
+" SvelteJS
+if filereadable(expand("~/.config/vim/sveltejs.config.vim"))
+"  source ~/.config/vim/sveltejs.config.vim
+endif
+
+" VueJS
+if filereadable(expand("~/.config/vim/vuejs.config.vim"))
+"  source ~/.config/vim/vuejs.config.vim
+endif
