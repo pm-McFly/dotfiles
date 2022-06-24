@@ -20,7 +20,8 @@ curl -Ss https://raw.githubusercontent.com/pm-McFly/dotfiles/main/install.sh | s
 # GPG and SSH key import helpers
 curl -SsO https://raw.githubusercontent.com/pm-McFly/dotfiles/main/utilities/gpg.sh
 curl -SsO https://raw.githubusercontent.com/pm-McFly/dotfiles/main/utilities/ssh.sh
-
+```
+```bash
 # Once installed update can be done as follow
 dotfiles-update
 ```
