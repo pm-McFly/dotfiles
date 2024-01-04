@@ -1,0 +1,35 @@
+[user]
+    name = Pierre 'McFly' Marty
+    email = paq.marty@gmail.com
+    signingKey = 6545FB494B671D7C
+[commit]
+    gpgSign = true
+[gpg]
+    program = gpg2
+[core]
+    editor = vim
+[tag]
+    gpgSign = true
+[init]
+    defaultBranch = main
+[alias]
+    logline = log --graph --pretty='%><(10)%C(red)%h %<(15)%C(green)%cr %C(yellow)%G? %<(70)%C(reset)%s <%ce> %C(bold blue)%<(22)%d'
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lg = !"git lg1"
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[pull]
+    ff = only
+
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
